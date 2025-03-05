@@ -40,7 +40,12 @@ print(sports_df.loc[1])
 print(sports_df.iloc[0])
 #바로 위에 나온 loc메소드와는 다르게 기존에 생각하던 방식으로 0부터 생긴거임
 #즉 지금 iloc을 쓴 메소드와 loc을 쓴 메소드는 같은 데이터를 호출 하고 있음
-##1.4.2부터 내일 이어서 공부 
-print("commit test")
-
-print("pull test")
+print(sports_df['악력'])
+print(sports_df['악력'].ndim)
+#악력의 요소들을 1차원으로 불러온 거임
+print(sports_df[['악력']])
+print(sports_df[['악력']].ndim)
+#2차원으로 불러온 결과
+print(sports_df[['학년','악력']])
+#원하는 요소들을 불러와서 데이터프레임 형식으로 불러오기 가능
+print(sports_df[['학년','악력']].ndim)
