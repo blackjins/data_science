@@ -42,3 +42,5 @@ print(sports_df.iloc[0])
 #즉 지금 iloc을 쓴 메소드와 loc을 쓴 메소드는 같은 데이터를 호출 하고 있음
 ##1.4.2부터 내일 이어서 공부 
 print("commit test")
+
+print("pull test")
