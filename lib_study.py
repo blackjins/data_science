@@ -41,4 +41,4 @@ print(sports_df.iloc[0])
 #바로 위에 나온 loc메소드와는 다르게 기존에 생각하던 방식으로 0부터 생긴거임
 #즉 지금 iloc을 쓴 메소드와 loc을 쓴 메소드는 같은 데이터를 호출 하고 있음
 ##1.4.2부터 내일 이어서 공부 
-print("commit test")
+print("commit test ")
