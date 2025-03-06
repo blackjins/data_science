@@ -44,7 +44,7 @@ housing_df.describe()
 print(housing_df.loc[99])
 #------------------5번 문제
 #ocean_proximity 특성값만 포함한 데이터프레임을 구하라.
-print(housing_df['ocean_proximity'])
+print(housing_df[['ocean_proximity']])
 #------------------6번 문제
 #median_income, median_house_value, ocean_proximity 특성값만 데이터프레임을 구하라.
 print(housing_df[["median_income", "median_house_value", "ocean_proximity"]])
