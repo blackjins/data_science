@@ -4,6 +4,8 @@ data_url = 'https://raw.githubusercontent.com/codingalzi/DataSci/refs/heads/mast
 #dataset 기본 주소
 sports_df = pd.read_csv(data_url + 'ch01_sport_test.csv', index_col = '학생번호')
 #데이터 셋 중 sport데이터 셋을 sports_df 변수에 저장
+#원래 sport_test.csv파일에는 "학생번호"라는 특성이 열에 하나 
+#read_csv에 index_col을 학생번호 라는 특성을 사용하면 sport_test파일에서 사라지고 행 인덱스로 사용됨
 sports_df.info()
 #sports_df정보 중 열의 정보를 불러옴
 print(sports_df.describe())

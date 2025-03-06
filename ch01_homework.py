@@ -41,7 +41,7 @@ housing_df.describe()
 ############################################################
 #------------------4번 문제
 #99번 인덱스의 샘플을 구하라.
-print(housing_df.loc[99])
+print(housing_df.iloc[98])
 #------------------5번 문제
 #ocean_proximity 특성값만 포함한 데이터프레임을 구하라.
 print(housing_df[['ocean_proximity']])
