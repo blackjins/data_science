@@ -13,9 +13,6 @@ total_rooms_range = np.max(housing_total_rooms_arr) - np.min(housing_total_rooms
 total_rooms_IQR = np.percentile(housing_total_rooms_arr, 75) - np.percentile(housing_total_rooms_arr, 25)
 total_rooms_arr = [total_rooms_mean, total_rooms_cen, total_rooms_mode, total_rooms_var, total_rooms_std, total_rooms_range, total_rooms_IQR]
 total_rooms_arr_norm = (total_rooms_arr - total_rooms_mean) / total_rooms_std
-print(
-    "표준화 = ", total_rooms_arr_norm
-)
 #total_rooms_df = pd.DataFrame({"total_rooms" : total_rooms_arr_norm}, index = pd.Index(['1', '2', '3', '4', '5', '6', '7'], name = 'number'))
 #정규화 진행 한 total_rooms 어레이 데이터프레임으로 변환
 housing_df.boxplot(column = ['total_rooms'], grid=False)
