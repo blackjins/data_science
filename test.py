@@ -1,5 +1,14 @@
+import pandas as pd
 import numpy as np
-arr1 = np.array([1, 2, 3, 4])
-arr2 = [2, 3]
-print(type(np.mean(arr2)))
-a = 10
+import matplotlib.pyplot as plt
+
+data_url = 'https://raw.githubusercontent.com/codingalzi/DataSci/refs/heads/master/data/'
+housing_df = pd.read_csv(data_url + "california_housing.csv")
+
+
+freq, bin_edges, _ = plt.hist(housing_df['median_income'], bins=100, range=(0, 20), rwidth=0.8)
+plt.xlabel("median_income")
+plt.ylabel("Frequency")
+plt.title("California housing data")
+
+plt.show()
